@@ -1,0 +1,28 @@
+{extend name="../application/index/view/stu/common.html" /}
+
+{block name="css"} 
+<!-- 首页单独样式 -->
+<link rel="stylesheet" href="__STATIC__/static/bootstrap/css/form.css">
+{/block}
+
+{block name="font"} <h2>玩转laravel</h2> {/block}
+
+{block name="main"}
+<div class="row">
+
+        <!-- 左侧菜单区域   -->
+        <div class="col-md-3">
+            <div class="list-group">
+                <a href="{:url('/stu/index')}" class="list-group-item ">学生列表</a>
+                <a href="{:url('/stu/add')}" class="list-group-item active">新增学生</a>
+            </div>
+        </div>
+
+        <!-- 右侧内容区域 -->
+        <div class="col-md-9">
+
+            {include file="../application/index/view/stu/form.html" username="cangcang" xxx="haha"}
+
+        </div>
+    </div>
+{/block}

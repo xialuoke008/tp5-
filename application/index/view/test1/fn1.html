@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	{$data1}<hr>
+
+
+	{if condition = "$data2['sex'] == '男'"}
+	你是男的
+	{elseif condition = "$data2['sex']=='女'"}
+	你是女的
+	{else}
+	不知道你的性别
+	{/if}
+	<hr>
+	{foreach name="data3" item='data'}
+	{$data.name}<br>
+	{/foreach}
+</body>
+</html>
